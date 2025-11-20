@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JAde Wii - Apps</title>
+    <title>Jade's Apps</title>
     <style>
         * {
             margin: 0;
@@ -12,11 +12,10 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
             background-color: #f5f5f5;
             color: #333;
             line-height: 1.6;
-            min-height: 100vh;
         }
 
         .container {
@@ -25,101 +24,63 @@
             padding: 40px 20px;
         }
 
-        header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
         h1 {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #333;
-            margin-bottom: 20px;
-            letter-spacing: -0.02em;
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
-            color: #666;
+            color: #1a1a1a;
             margin-bottom: 40px;
+            text-align: center;
         }
 
-        .app-card {
+        .card {
             background: white;
             border-radius: 12px;
             padding: 30px;
             margin-bottom: 30px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .app-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        .app-title {
+        .card h2 {
             font-size: 1.8rem;
             font-weight: 700;
+            color: #2a2a2a;
             margin-bottom: 15px;
-            color: #333;
         }
 
-        .app-description {
-            color: #666;
-            margin-bottom: 25px;
-            font-size: 1rem;
-            line-height: 1.7;
+        .card p {
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6;
         }
 
-        .app-links {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
+        .card ul {
+            list-style: none;
+            padding: 0;
         }
 
-        .app-link {
-            display: inline-block;
-            padding: 12px 20px;
-            background: #007AFF;
-            color: white;
+        .card li {
+            margin: 10px 0;
+        }
+
+        .card a {
+            color: #007AFF;
             text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all 0.3s ease;
         }
 
-        .app-link:hover {
-            background: #0056CC;
-            transform: translateY(-1px);
-        }
-
-        .app-link.secondary {
-            background: #f0f0f0;
-            color: #333;
-        }
-
-        .app-link.secondary:hover {
-            background: #e0e0e0;
+        .card a:hover {
+            text-decoration: underline;
         }
 
         .coming-soon {
-            opacity: 0.6;
-            border: 2px dashed #ddd;
-            background: #f9f9f9;
-        }
-
-        .coming-soon .app-link {
-            background: #ddd;
-            color: #999;
-            cursor: default;
+            opacity: 0.7;
+            color: #666;
         }
 
         footer {
             text-align: center;
-            padding: 40px 20px 20px;
-            color: #666;
+            color: #777;
             font-size: 0.9rem;
+            margin-top: 40px;
         }
 
         @media (max-width: 768px) {
@@ -131,61 +92,35 @@
                 font-size: 2rem;
             }
 
-            .subtitle {
-                font-size: 1rem;
-            }
-
-            .app-card {
+            .card {
                 padding: 20px;
-            }
-
-            .app-links {
-                flex-direction: column;
-            }
-
-            .app-link {
-                text-align: center;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>JAde Wii</h1>
-            <div class="subtitle">iOS Apps & Projects</div>
-        </header>
+        <h1>Jade's Apps</h1>
 
-        <main>
-            <div class="app-card">
-                <h2 class="app-title">WaveFace</h2>
-                <p class="app-description">
-                    Interactive waveform synthesizer that brings sound to life through an expressive animated character.
-                    Experience synthesis in a completely new way with 24+ unique waveforms and real-time visual feedback.
-                </p>
-                <div class="app-links">
-                    <a href="https://jadewii.com/apps/noiseface" class="app-link">Download on App Store</a>
-                    <a href="https://jadewii.github.io/waveface/" class="app-link secondary">Learn More</a>
-                    <a href="https://jadewii.github.io/waveface/#support" class="app-link secondary">Support & FAQ</a>
-                    <a href="https://jadewii.github.io/waveface/#privacy" class="app-link secondary">Privacy Policy</a>
-                </div>
-            </div>
+        <div class="card">
+            <h2>WaveFace</h2>
+            <p>Interactive waveform synthesizer that brings sound to life through an expressive animated character. Experience synthesis in a completely new way with 24+ unique waveforms and real-time visual feedback.</p>
+            <ul>
+                <li><a href="https://jadewii.com/apps/noiseface">Download on App Store</a></li>
+                <li><a href="https://jadewii.github.io/waveface/">Learn More</a></li>
+                <li><a href="https://jadewii.github.io/waveface/#support">Support & FAQ</a></li>
+                <li><a href="https://jadewii.github.io/waveface/#privacy">Privacy Policy</a></li>
+            </ul>
+        </div>
 
-            <div class="app-card coming-soon">
-                <h2 class="app-title">Coming Soon</h2>
-                <p class="app-description">
-                    More innovative apps and projects are in development.
-                    Stay tuned for updates on new releases and exciting features.
-                </p>
-                <div class="app-links">
-                    <span class="app-link">In Development...</span>
-                </div>
-            </div>
-        </main>
+        <div class="card coming-soon">
+            <h2>Coming Soon</h2>
+            <p>More innovative apps and projects are in development. Stay tuned for updates on new releases and exciting features.</p>
+        </div>
+
+        <footer>
+            © 2024 Jade's Apps. All rights reserved.
+        </footer>
     </div>
-
-    <footer>
-        <div>© 2024 JAde Wii. All rights reserved.</div>
-    </footer>
 </body>
 </html>
